@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/teview"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="Here is the list of your expenditures!"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/as"
+        />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/teview"
+        android:id="@+id/tlist"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear"
+        android:gravity="center"
+        android:text="Clear list"
+        android:textSize="15dp"
+        android:layout_marginStart="115dp"
+        android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:onClick="true"
+        style="?android:textAppearanceSmall"
+        android:textStyle="normal"
+        android:background="@drawable/background_login"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
